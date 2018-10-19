@@ -4,13 +4,13 @@ This application also uses Server Push to ensure HTTP/2.
 
 ##### N.B: A pdf file is attached to show how to enable SSL to ensure HTTP/2. This file is collected from BCIT course metarial.
 
-## Project Requirements
+## Application Requirements
 1. A web application equiped with an http filer, so that it enables the application to display user's image if a match exists.
 2. If no match exists, by default, the application should display the provided "Duke" image.
 3. Server push is used to push the user's image to the browser before the html code is sent.
 4. Asynchroniztion processing is used while it is looking for the image to load.
 
-## Project-Screenshots
+## Application-Screenshots
 
 A compilation of screenshots of running application I've created
 
