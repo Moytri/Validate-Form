@@ -1,7 +1,8 @@
 # Validate-Form
 The main functionality of this application is to validate a form using Servlet Filter and Asynchronous Servlet.
-This application also uses Server Push to ensure HTTP/2
-N.B: A pdf file is attached to show how to enable SSL to ensure HTTP/2. This file collected from BCIT course metarial.
+This application also uses Server Push to ensure HTTP/2.
+
+#### N.B: A pdf file is attached to show how to enable SSL to ensure HTTP/2. This file collected from BCIT course metarial.
 
 ## Project Requirements
 1. A web application equiped with an http filer, so that it enables the application to display user's image if a match exists.
