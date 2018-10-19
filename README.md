@@ -12,9 +12,9 @@ This application also uses Server Push to ensure HTTP/2
 
 A compilation of screenshots of running application I've created
 
-Screeshots - registered name
+### Screeshots - registered name and enable SSL
 ![](https://github.com/Moytri/Validate-Form/blob/master/images/open.png)
 
-Screeshots - non registered name
+### Screeshots - non registered name
 ![](https://github.com/Moytri/Validate-Form/blob/master/images/open2.png)
 
