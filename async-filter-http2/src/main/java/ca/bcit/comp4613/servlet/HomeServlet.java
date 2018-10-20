@@ -20,27 +20,27 @@ public class HomeServlet extends HttpServlet {
 	//application image is pushed by Server before html page
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-				// Returns a new PushBuilder instance if HTTP/2 enabled or null if it is not enabled/supported.
-				PushBuilder pushBuilder = request.newPushBuilder();
+		// Returns a new PushBuilder instance if HTTP/2 enabled or null if it is not enabled/supported.
+		PushBuilder pushBuilder = request.newPushBuilder();
 				
-				String name = (String) request.getAttribute("name");
-				String image = (String) request.getAttribute("image");
+		String name = (String) request.getAttribute("name");
+		String image = (String) request.getAttribute("image");
 				
-				if((name == null || name.isEmpty()) && image == null) {
-					if (pushBuilder != null ){
-						pushBuilder
-								.path(request.getContextPath()+"/image/duke.waving.gif")
-								.addHeader("content-type", "image/gif")
-								.push();
-					}
+		if((name == null || name.isEmpty()) && image == null) {
+			if (pushBuilder != null ){
+				pushBuilder
+					.path(request.getContextPath()+"/image/duke.waving.gif")
+					.addHeader("content-type", "image/gif")
+					.push();
 				}
+			}
 
-				else {
-					if (pushBuilder != null ){
-						pushBuilder
-								.path(request.getContextPath()+image)
-								.addHeader("content-type", "image/gif")
-								.push();
+			else {
+				if (pushBuilder != null ){
+					pushBuilder
+						.path(request.getContextPath()+image)
+						.addHeader("content-type", "image/gif")
+						.push();
 					}
 				}
 				
